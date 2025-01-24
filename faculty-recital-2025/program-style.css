@@ -129,7 +129,7 @@ body {
     text-decoration: none;
 }
 
-.item {
+.program-item {
     background-color: white;
     background-image: linear-gradient(var(--true-blue), var(--dark-true-blue));
     border-radius: 15pt;

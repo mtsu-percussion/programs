@@ -82,3 +82,25 @@ function flashItem(id) {
 
     item.classList.add("flash-item");
 }
+
+function addTouchListeners() {
+    let items = document.getElementsByClassName("program-item");
+
+    for (let i = 0; i < items.length; i++) {
+        addTouch(items[i].id);
+    }
+}
+
+function addTouch(id) {
+    let element = document.getElementById(id);
+
+    element.addEventListener("click", function() {
+        if (element.classList.contains("secret")) {
+            secret(id);
+        } else {
+            toggle(id);
+        }
+    })
+}
+
+addTouchListeners();
