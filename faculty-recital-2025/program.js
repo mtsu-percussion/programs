@@ -83,7 +83,7 @@ function secret(id) {
 
     if (sameHourTrigger || nextHourTrigger) {
         conceal(id);
-        updateTitle(id, "I - IV the Davilas");
+        updateTitle(id, "I - IV the Dávilas");
         flashItem(id); 
     } else {
         toggle(id);
