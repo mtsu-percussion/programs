@@ -169,15 +169,21 @@ body {
     margin-right: 0%;
 }
 
+.group-heading {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.personnel-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
 #logo {
-    width: 25vw;
-    padding: 20px;
-    margin: 20px;
+    width: 90vw;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
     border-radius: 10px;
     background-image: linear-gradient(var(--true-blue), var(--xdark-true-blue));
-}
-#thanks {
-    margin: 0px 20px 100px 20px;
-    font-size: 3vw;
-    font-style: italic;
 }
