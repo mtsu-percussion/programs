@@ -14,6 +14,7 @@ body {
     --reveal-delay-2: 1.4s;
     --reveal-delay-3: 1.8s;
     --reveal-delay-4: 2.2s;
+    --reveal-delay-5: 2.6s;
 
     --note-open-duration: 0.75s;
     --flash-duration: 8s;
@@ -22,6 +23,25 @@ body {
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 100; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in;
+    animation-duration: var(--reveal-duration);
+    animation-fill-mode: forwards;
+}
+.fade1 {
+    animation-delay: var(--reveal-delay-1);
+}
+.fade2 {
+    animation-delay: var(--reveal-delay-2);
+}
+.fade3 {
+    animation-delay: var(--reveal-delay-3);
+}
+.fade4 {
+    animation-delay: var(--reveal-delay-4);
 }
 
 #title-page {
@@ -37,53 +57,25 @@ body {
     font-size: 5vw;
     font-weight: normal;
 }
-#presents {
-    font-size: 3vw;
-    font-style: italic;
-}
+
 #title {
-    opacity: 0;
     font-size: 10vw;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-    animation: fade-in;
-    animation-duration: var(--reveal-duration);
-    animation-delay: var(--reveal-delay-1);
-    animation-fill-mode: forwards;
+    margin: 40px 0px 0px 0px;
 }
-#directors, #featuring {
+.subsection {
+    margin: 40px 0px 10px 0px;
     font-size: 3vw;
     font-style: italic;
-
-    opacity: 0;
-    animation: fade-in;
-    animation-duration: var(--reveal-duration);
-    animation-delay: var(--reveal-delay-2);
-    animation-fill-mode: forwards;
 }
-.name, .guest {
+.name-list div {
     font-size: 6vw;
-    margin-top: 10px;
-    padding: 0px;
-
-    opacity: 0;
-    animation: fade-in;
-    animation-duration: var(--reveal-duration);
-    animation-delay: var(--reveal-delay-2);
-    animation-fill-mode: forwards;
+    margin-bottom: 10px;
 }
 
 #location {
-    margin-top: 5rem;
-    font-size: 3vw;
-
-    opacity: 0;
-    animation: fade-in;
-    animation-duration: var(--reveal-duration);
-    animation-delay: var(--reveal-delay-3);
-    animation-fill-mode: forwards;
+    margin-top: 40px;
+    font-size: 3.5vw;
 }
 
 
@@ -93,12 +85,6 @@ body {
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 10px;
-
-    opacity: 0;
-    animation: fade-in;
-    animation-fill-mode: forwards;
-    animation-duration: var(--reveal-duration);
-    animation-delay: var(--reveal-delay-4);
 }
 #program-page h1 {
     font-size: 8vw;
@@ -183,13 +169,6 @@ body {
     margin-right: 0%;
 }
 
-footer {
-    opacity: 0;
-    animation: fade-in;
-    animation-fill-mode: forwards;
-    animation-duration: var(--reveal-duration);
-    animation-delay: var(--reveal-delay-4);
-}
 #logo {
     width: 25vw;
     padding: 20px;
