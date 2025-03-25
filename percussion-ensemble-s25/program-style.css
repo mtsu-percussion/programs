@@ -170,8 +170,9 @@ body {
 }
 
 .group-heading {
-    font-size: 1.5rem;
+    font-size: 5vw;
     font-weight: bold;
+    text-decoration: underline;
     margin-bottom: 10px;
 }
 .personnel-list-container {
@@ -186,7 +187,7 @@ body {
 }
 
 .personnel-list li {
-    font-size: 16pt;
+    font-size: 20pt;
     margin: 5px;
 }
 
