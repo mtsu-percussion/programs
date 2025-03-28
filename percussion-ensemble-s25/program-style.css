@@ -6,6 +6,9 @@ body {
     margin-bottom: 50px;
 
     --true-blue: #0066cc;
+    --true-blue-light: #59b6e6;
+    --true-blue-cyan: #00FFFF;
+    
     --dark-true-blue: #002277;
     --xdark-true-blue: #001166;
 
@@ -120,7 +123,6 @@ body {
 }
 
 .program-item {
-    background-color: white;
     background-image: linear-gradient(var(--true-blue), var(--dark-true-blue));
     border-radius: 15pt;
     padding: 3rem;
@@ -161,7 +163,7 @@ body {
     transition-timing-function: ease-in-out;
     overflow: hidden;
 }
-.note-container hr {
+.separator {
     width: 75%;
     margin: 30px auto 30px auto;
     border-color: white;
