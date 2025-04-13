@@ -50,9 +50,29 @@ body {
     animation-delay: var(--reveal-delay-5);
 }
 
+.blurBG {
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    color: white;
+}
+.spacer60 {
+    height: 60px;
+}
+.spacer100 {
+    height: 100px;
+}
+
 #title-page {
-    background-image: linear-gradient(var(--true-blue), var(--dark-true-blue));
-    padding: 20px;
+    /*background-image: linear-gradient(var(--true-blue), var(--dark-true-blue));*/
+    background-image: url("./images/TylerFullWidth.png");
+    background-color: #222222;
+    background-position: center;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    padding: 40px 20px 20px 40px;
     border: 2pt solid white;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -62,31 +82,29 @@ body {
 #department {
     font-size: 5vw;
     font-weight: normal;
+    margin: 0px;
 }
 
 #title {
     font-size: 10vw;
     font-weight: bold;
-    margin: 40px 0px 0px 0px;
+    margin: 0px;
 }
 #subtitle {
     font-size: 8vw;
     font-weight: normal;
-    margin: 40px 0px 0px 0px;
+    margin: 0px;
 }
 
 .subsection {
-    margin: 40px 0px 10px 0px;
-    font-size: 3vw;
+    margin: 0px;
+    font-size: 3.5vw;
     font-style: italic;
-}
-.name-list div {
-    font-size: 5vw;
-    margin-bottom: 15px;
 }
 
 #location {
-    margin-top: 60px;
+    margin: 0px;
+    padding: 10px;
     font-size: 3.5vw;
 }
 
