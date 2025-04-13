@@ -53,7 +53,7 @@ body {
 .blurBG {
     display: inline-block;
     padding: 5px 20px 5px 20px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(20px);
     border-radius: 30px;
     color: white;
@@ -61,8 +61,8 @@ body {
 .spacer60 {
     height: 60px;
 }
-.spacer100 {
-    height: 100px;
+.spacer120 {
+    height: 120px;
 }
 
 #title-page {
