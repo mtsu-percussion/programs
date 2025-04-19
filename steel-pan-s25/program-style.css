@@ -1,0 +1,227 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
+
+    --true-blue: #0066cc;
+    --true-blue-light: #59b6e6;
+    --true-blue-cyan: #00FFFF;
+    
+    --dark-true-blue: #002277;
+    --xdark-true-blue: #001166;
+
+    --reveal-duration: 3.5s;
+    --reveal-delay-1: 1s;
+    --reveal-delay-2: 1.4s;
+    --reveal-delay-3: 1.8s;
+    --reveal-delay-4: 2.2s;
+    --reveal-delay-5: 2.6s;
+
+    --note-open-duration: 0.75s;
+    --flash-duration: 8s;
+
+    --bg-cover: rgba(0, 0, 0, 0.5);
+    --item-margin: 3rem;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 100; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in;
+    animation-duration: var(--reveal-duration);
+    animation-fill-mode: forwards;
+}
+.fade1 {
+    animation-delay: var(--reveal-delay-1);
+}
+.fade2 {
+    animation-delay: var(--reveal-delay-2);
+}
+.fade3 {
+    animation-delay: var(--reveal-delay-3);
+}
+.fade4 {
+    animation-delay: var(--reveal-delay-4);
+}
+.fade5 {
+    animation-delay: var(--reveal-delay-5);
+}
+
+.beach-background {
+    background: linear-gradient(var(--bg-cover), var(--bg-cover)), 
+        url("./images/beach.jpg.webp");
+    
+    background-position: center, center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+}
+
+.darkbeach-background {
+    background: linear-gradient(var(--bg-cover), var(--bg-cover)), 
+        url("./images/darkbeach.jpg");
+    
+    background-position: center, center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+}
+
+.palmtree-background {
+    background: linear-gradient(var(--bg-cover), var(--bg-cover)), 
+        url("./images/palm-trees.webp");
+    
+    background-position: center, center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+}
+
+#title-page {
+    color: white;
+    padding: 20px;
+    border: 2pt solid white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+
+#department {
+    font-size: 5vw;
+    font-weight: normal;
+}
+
+#title {
+    font-size: 10vw;
+    font-weight: bold;
+    margin: 40px 0px 0px 0px;
+}
+.subsection {
+    margin: 40px 0px 10px 0px;
+    font-size: 3vw;
+    font-style: italic;
+}
+.name-list div {
+    font-size: 5vw;
+    margin-bottom: 15px;
+}
+
+#location {
+    margin-top: 60px;
+    font-size: 3.5vw;
+}
+
+
+#program-page {
+    border: 2pt solid white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#program-page h1 {
+    font-size: 8vw;
+}
+
+#personnel-page {
+    border: 2pt solid white;
+    border-radius: 15px;
+    padding: 20px;
+}
+#personnel-page h1 {
+    font-size: 7vw;
+}
+#program-page .instructions {
+    font-size: 4.5vw;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+#program-order {
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: none;
+}
+#program-order a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.program-item {
+    padding: var(--item-margin);
+    transition: none;
+}
+.program-group {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.item-open {
+    background-image: linear-gradient(var(--dark-true-blue), var(--true-blue));
+}
+.piece {
+    font-size: 4.25vw;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: top;
+}
+.title {
+    text-align: left;
+    font-weight: bolder;
+}
+.composer {
+    text-align: right;
+}
+.supplement {
+    font-size: 3.75vw;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.separator {
+    margin-left: var(--item-margin);
+    margin-right: var(--item-margin);
+    border-color: white;
+}
+
+.program-group-heading {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.personnel-group-heading {
+    font-size: 5vw;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.personnel-list-container {
+    display: flex;
+    justify-content: space-around;
+}
+.personnel-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.personnel-list li {
+    font-size: 3.5vw;
+    margin: 5px;
+}
+
+#logo {
+    width: 90vw;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--true-blue), var(--xdark-true-blue));
+}
